@@ -66,7 +66,7 @@ def logdata(direc):
     plt.xticks(X+0.2, label)
 
     ax2 = ax1.twinx()
-    p2 = ax2.bar(X+0.4, Y2, color='g',width=0.4, label='Ki', align="center")
+    p2 = ax2.bar(X+0.4, np.log10(Y2), color='g',width=0.4, label='Ki', align="center")
     p = [p1,p2]
     ax1.legend(p,[i.get_label() for i in p])
     plt.show()
